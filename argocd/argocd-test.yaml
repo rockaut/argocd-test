@@ -10,7 +10,7 @@ spec:
     namespace: default
   project: default
   source:
-    path: kustomize/
+    path: kustomize/overlays/prod/
     repoURL: https://github.com/rockaut/argocd-test.git
     targetRevision: HEAD
   syncPolicy:
