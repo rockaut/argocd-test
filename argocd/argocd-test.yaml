@@ -1,0 +1,17 @@
+---
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: argocd-test
+spec:
+  destination:
+    name: in-cluster
+    namespace: argocd-test
+  project: default
+  source:
+    path: kustomize/
+    repoURL: https://github.com/rockaut/argocd-test.git
+    targetRevision: HEAD
+  syncPolicy:
+    syncOptions:
+    - CreateNamespace=true
