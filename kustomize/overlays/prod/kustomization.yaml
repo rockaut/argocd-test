@@ -11,5 +11,5 @@ images:
   newTag: v1.6.1
 
 resources:
-  - ..\..\bases
+  - ../../bases/
   - ingressroute.yaml
