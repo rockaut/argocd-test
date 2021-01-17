@@ -7,7 +7,7 @@ namespace: default
 
 images:
 - name: traefik/whoami
-  newName: dockerhub-proxy.kube.fischbacher.rocks/traefik/whoami
+  newName: docker-io.nas.fischbacher.rocks/traefik/whoami
   newTag: v1.6.1
 
 resources:
